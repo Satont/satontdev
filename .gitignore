@@ -3,3 +3,4 @@ views/**/*.go
 views/**/*txt
 .idea
 bin
+docker-compose.yaml
