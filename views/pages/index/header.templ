@@ -1,0 +1,25 @@
+package index
+
+import "github.com/satont/satontdev/internal/config"
+
+css headerCss() {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+  justify-content: center;
+}
+
+css subtitleCss() {
+  letter-spacing: 1px;
+  color: #aaa;
+  font-weight: 300;
+  text-shadow: 0 1px 4px rgba(0,0,0,0.3);
+}
+
+templ header() {
+  <section id="header" class={ headerCss() }>
+    <h4>{ config.GetConfig().About.Title }</h4>
+    <h5 class={ subtitleCss() }>{ config.GetConfig().About.SubTitle }</h5>
+  </section>
+}

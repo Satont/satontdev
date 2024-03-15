@@ -1,0 +1,40 @@
+package index
+
+import "github.com/satont/satontdev/internal/config"
+
+templ projects() {
+	<section id="projects">
+		<h1 class={ title() }>Projects that I’m working/worked on</h1>
+
+		for _, project := range config.GetConfig().Career.Projects {
+			<div>
+				<h3>
+					if project.Href != nil {
+						<a href={ templ.URL(*project.Href) } target="_blank" class={ href() }>{ project.Name }</a>
+					} else {
+						{ project.Name }
+					}
+				</h3>
+				<p>{ project.Description }</p>
+
+				if project.Technologies != nil {
+					<h2>Technologies used:</h2>
+					<ul>
+						for _, tech := range project.Technologies {
+							<li>{ tech }</li>
+						}
+					</ul>
+				}
+
+				if project.Libraries != nil {
+					<h2>Libraries used:</h2>
+					<ul>
+						for _, lib := range project.Libraries {
+							<li>{ lib }</li>
+						}
+					</ul>
+				}
+			</div>
+		}
+	</section>
+}

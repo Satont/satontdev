@@ -1,0 +1,30 @@
+package layout
+
+css body() {
+
+}
+
+templ Layout(component templ.Component) {
+  <!doctype html>
+  <html>
+    <head>
+      <title>Satont</title>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <style>
+        h1,h2,h3,h4,h5,h6 {
+            margin-block-start: 0;
+            margin-block-end: 0;
+        }
+        body {
+          background: #232323;
+          font: 18px / 1.6em "Helvetica Neue", Helvetica, Arial, sans-serif;
+          color: #eee;
+        }
+      </style>
+    </head>
+    <body class={ body() }>
+      @component
+    </body>
+  </html>
+}

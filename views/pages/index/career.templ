@@ -1,0 +1,30 @@
+package index
+
+import "github.com/satont/satontdev/internal/config"
+
+templ career() {
+ <section id="career">
+ 	<h1 class={ title() }>Career</h1>
+
+ 	<h3>Possible roles</h3>
+ 	<ul>
+ 		for _, value := range config.GetConfig().Career.PossibleRoles {
+ 			<li>{ value }</li>
+ 		}
+ 	</ul>
+
+ 	<h3>Experience</h3>
+ 	<ul>
+ 		for _, value := range config.GetConfig().Career.Jobs {
+ 			<li>
+ 				if value.Href != nil {
+ 					<a href={ templ.URL(*value.Href) } target="_blank" class={ href() }>{ value.Company }</a>
+				} else {
+					{ value.Company }
+				}
+				({ value.DateRange }) { value.Role }
+ 			</li>
+ 		}
+ 	</ul>
+ </section>
+}

@@ -1,0 +1,36 @@
+package index
+
+css indexPage() {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 2rem;
+  padding-left: 2rem;
+  max-width: 70dvw;
+}
+
+css title() {
+  text-decoration: none;
+  font-size: 2em;
+  font-weight: bold;
+  color: #eee;
+  line-height: 1.1em;
+	display: block;
+	margin-block-start: 1em;
+	margin-block-end: 0.5em;
+}
+
+css href() {
+  color: #258fb8 !important;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+templ Index() {
+  <div class={ indexPage() }>
+    @header()
+    @about()
+    @career()
+    @projects()
+  </div>
+}

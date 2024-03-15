@@ -1,0 +1,33 @@
+title: Alexandr Rotachev
+subTitle: Golang/Node.js Backend Developer
+description: My name is Alexander, i’m {{ . }} years old. I started my path as developer from Pawn and PHP, grew up to NodeJS, now i’m mostly writing Golang.
+birthDate: Mon, 05 Oct 1998 02:00:00 MSK
+socials:
+  - name: Telegram
+    href: https://t.me/satont
+  - name: Github
+    href: https://github.com/satont
+languages:
+  - name: Russian
+    grade: Native
+  - name: English
+    grade: B2
+skills:
+  - CI/CD
+  - Linux
+  - Postgres
+  - SQLite
+  - MongoDB
+  - Node.js
+  - Redis / Redis PubSub
+  - Git
+  - TypeScript
+  - Docker
+  - Docker Swarm
+  - RabbitMQ
+  - Nats.io
+  - GRPC
+  - WebSockets
+  - Graphql (partly)
+  - Golang
+  - Vue

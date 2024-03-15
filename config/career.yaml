@@ -1,0 +1,63 @@
+possibleRoles:
+  - Node.js developer
+  - Golang developer
+
+jobs:
+  - company: "GetTransport"
+    href: "https://gettransport.com"
+    role: "Node.js developer"
+    dateRange: "10/2019 - 10/2020"
+  - company: "X5"
+    href: "https://x5.ru"
+    role: "Node.js developer"
+    dateRange: "03/2021 - 12/2021"
+  - company: "altMP Team"
+    href: "https://altmp.team"
+    role: "Golang and Node.js developer"
+    dateRange: "05/2023 - now"
+
+projects:
+  - name: "TwirApp: platform for help twitch streamers manage their broadcasts"
+    href: https://github.com/Satont/twir
+    description: |
+      First of all, it is a chat bot, but the product does not end there. It helps streamers to create hgihtly customizable interactive systems, with overlays, streaming software, chat, discord interactions.
+
+      I started the project as a single-process node bot, but then there was a desire to develop it into something more, to test my skills. I started implementing microservices based on Nest.js, gradually breaking down pieces of functionality into different services and microservices.
+      Communication between the services was via TCP, then I wanted to use some sort of queuing system, so I implemented nats.io.
+
+      From the beginning of the project I used caching, authorisation and authentication techniques in my API.
+
+      At some point I wanted to try my hand as a Golang developer and started to convert parts of the system to this programming language.
+      I really liked the language because of its simplicity, the model of working with competitive programming, the ability to compile into a binary file and the ease of deploying the application to servers.
+      So now most of the services in the project are written in this wonderfully simple language.
+
+      I’ve tried an incredible amount of technology that’s hard to describe in text, so here’s just some of what I’ve used (and continue to use)
+    technologies:
+      - GitHub actions (CI/CD)
+      - Node.js
+      - TypeScript
+      - Golang
+      - Redis
+      - Redis PubSub
+      - Postgres
+      - Docker
+      - Docker Swarm (Deploy and orchestration)
+      - Git
+      - Make
+      - Redis
+      - RabbitMQ
+      - Nats.io
+      - GRPC
+      - WebSockets
+      - Webhooks
+      - OAuth
+    libraries:
+      - Nest.js
+      - Vue
+      - React
+      - Twirp (grpc alternative)
+      - SQLX
+      - PGX
+      - GORM
+      - TypeORM
+      - PrismaORM
