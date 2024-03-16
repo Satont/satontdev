@@ -12,7 +12,7 @@ jobs:
     role: "Node.js developer"
     dateRange: "03/2021 - 12/2021"
   - company: "altMP Team"
-    href: "https://altmp.team"
+    href: "https://altv.mp"
     role: "Golang and Node.js developer"
     dateRange: "05/2023 - now"
 
